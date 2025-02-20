@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+      <title>Vartic Vasile - practica 2022</title>
+      <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300,400,500,700&display=swap&subset=latin-ext" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <a href="#" class="scrollToTop"><i class="fa fa-heart"></i></a>
+      <!-- Header -->
+         <div id="headerHTML" class="index.html"></div>
+      <!-- Page -->
+      <div class="container-fluid no margin-mobile">
+         <div class="row no slide-bg">
+            <div class="col-12 no">
+               <ul class="slider">
+                  <li>
+                     <div class="row-absolute">
+                        <div class="slider-text slider-text-lg">
+                           <h1>
+                              <a href="#">
+                              <span class="bars-opacity">ALEGEREA TA - BEAUTYHEALTH.MD!</span>
+                              <strong></strong>
+                              </a>
+                           </h1>
+                        </div>
+                     </div>
+                     <a class="slider-img" href="#">
+                     <img class="unfeldebg" src="https://i.imgur.com/CwuqTqj.jpg">
+                     </a>
+                     <div class="slider-text slider-text-xs d-md-none">
+                        <h1>
+                           <a href="#">
+                           <span>ALEGEREA TA - BEAUTYHEALTH.MD!</span>
+                           <strong></strong>
+                           </a>
+                        </h1>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid no pb-4 pt-4">
+         <div class="container row-center">
+            <div class="row">
+               <div class="col-12 text-center scrollpoz">
+                  <h2>Cele mai noi servicii</h2>
+               </div>
+            </div>
+            <div class="row prod-row" id="displayNewServices"></div>
+         </div>
+      </div>
+      <!-- Footer -->
+      <div class="container-fluid no bg-dark voucher-bg">
+         <div class="container row-center">
+            <div class="row pt-4 pb-4 scrollpoz">
+               <div class="col-md-9 col-12 pt-1 text-center text-md-left">
+                  <h2>
+                  Prețuri reduse</h3>
+                  <h3>Pe beautyhealth.md găsiți cele mai ieftine servicii!</h3>
+               </div>
+               <div class="col-md-3 col-12 py-md-1 text-center text-md-right">
+                  <a class="btn btn-default btn-xl" href="categorii.html">Vezi categoriile</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid no pt-4 pb-4">
+         <div class="container row-center">
+            <div class="row">
+               <div class="col-12 text-center scrollpoz">
+                  <h2>Cele mai vândute servicii</h2>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-5 col-12 prod-banners content-banner scrollpoz pb-3">
+                  <figure>
+                     <a class="prod-banner-content" href="achitare.html">
+                        <div class="prod-banner-info">
+                           <h3>VEZI METODELE DE ACHITARE</h3>
+                           <h4></h4>
+                        </div>
+                        <img src="https://i.imgur.com/qGuIcMH.jpg">
+                     </a>
+                  </figure>
+               </div>
+               <div class="col-md-7 col-12 carousel-section">
+                  <div class="row" id="displayMostSelledServices"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="footerHTML"></div>
+      <script src="js/scripts.js"></script>
+      <script type="text/javascript">
+         newServicesIndexPage();
+         mostSelledIndexPage();
+      </script>
+   </body>
+</html>

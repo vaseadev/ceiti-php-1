@@ -135,8 +135,10 @@ if (isset($_POST['add_wishlist']))
                      </form>
                       <form method="POST">
                       <div>
-                         <button value="<?= floor($last_service->id) ?>" style="border: 0; background: transparent" name="add_cart" type="submit" class="add-cart"><i class="fa fa-shopping-basket"></i></button>
-                      </div>
+                        <button value="<?= floor($last_service->id ?? 0) ?>" style="border: 0; background: transparent" name="add_cart" type="submit" class="add-cart">
+                           <i class="fa fa-shopping-basket"></i>
+                        </button>
+                     </div>
                      </form>
                       <a href="<?= Config::$URL ?>service/<?= Config::antiXSS($service->id) ?>">
                       <img src="<?= Config::antiXSS($service->image) ?>">

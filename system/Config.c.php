@@ -195,7 +195,8 @@ public static function liHeaderActive($active)
 
 public static function antiXSS($text)
 {
-	return htmlspecialchars(strip_tags($text));
+    $text = $text ?? '';
+    return htmlspecialchars(strip_tags($text));
 }
 
 public static function cleanText($text = null)

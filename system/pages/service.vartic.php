@@ -90,7 +90,7 @@
                         <div class="col-md-6 prod-quant">
                            <div class="input-group mt-1 mb-2">
                               <span class="input-group-btn">
-                              <button type="button" class="btn btn-number remove_cant" data-price="<?= Config::antiXSS($spanervice->price) ?>">
+                              <button type="button" class="btn btn-number remove_cant" data-price="<?= Config::antiXSS($service->price) ?>">
                               <span class="fa fa-minus"></span>
                               </button>
                               </span>

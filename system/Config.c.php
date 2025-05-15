@@ -14,7 +14,7 @@ public static $loginSessionName = 'user_login_afs123asd';
 public static $administratorEmail = 'user_login_afs123asd';
 
 public static $URL = 'http://localhost/ceiti-php-1/';
-public static $SITENAME = 'Magazin Auto';
+public static $SITENAME = 'BeautyHealth';
 
 private function __construct() {
 		$db['mysql'] = array(
@@ -151,13 +151,12 @@ public static function init()
 	return self::$instance;
 }
 
-
 private static function _getUrl()
 {
     $url = rtrim($_GET['page'] ?? '', '/');
     $url = filter_var($url, FILTER_SANITIZE_URL);
     self::$_url = explode('/', $url);
-}
+}	
 
 public static function getContent()
 {

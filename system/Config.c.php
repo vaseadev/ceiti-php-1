@@ -13,7 +13,7 @@ public static $_url = array();
 public static $loginSessionName = 'user_login_afs123asd';
 public static $administratorEmail = 'user_login_afs123asd';
 
-public static $URL = 'http://localhost/site-colegiu/';
+public static $URL = 'http://localhost/ceiti-php-1/';
 public static $SITENAME = 'Magazin Auto';
 
 private function __construct() {
@@ -154,10 +154,9 @@ public static function init()
 
 private static function _getUrl()
 {
-	$url = isset($_GET['page']) ? $_GET['page'] : null;
-	$url = rtrim($url, '/');
-	$url = filter_var($url, FILTER_SANITIZE_URL);
-	self::$_url = explode('/', $url);
+    $url = rtrim($_GET['page'] ?? '', '/');
+    $url = filter_var($url, FILTER_SANITIZE_URL);
+    self::$_url = explode('/', $url);
 }
 
 public static function getContent()
